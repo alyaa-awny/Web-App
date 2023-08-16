@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transforma</title>
+    <!-- <link
+      href="https://dpwprod.azureedge.net/sokhna/-/media/project/dpwg/dpwg-tenant/corporate/global/common/favicon-new.png?rev=74c025e119f04052a399fb8e729bb643"
+      rel="shortcut icon"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css"
+      integrity="sha512-Z/def5z5u2aR89OuzYcxmDJ0Bnd5V1cKqBEbvLOiUNWdg9PQeXVvXLI90SE4QOHGlfLqUnDNVAYyZi8UwUTmWQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>Transform File from CSV To Xslx</header>
+      <form>
+        <input type="file" class="file-input" name="file" hidden />
+        <i class="fas fa-cloud-upload-alt"></i>
+        <p>Browse File To Upload</p>
+      </form>
+    </div>
+    <main class="container container-table hidden">
+      <section class="table__header">
+        <h1>Receipts' Data</h1>
+      </section>
+      <section class="table__body">
+        <table class="table">
+          <thead class="tableHead">
+            <tr>
+              <th scope="col">Business Unit</th>
+              <th scope="col">Receipt Method ID</th>
+              <th scope="col">Remittance Bank</th>
+              <th scope="col">Remittance Bank Account</th>
+              <th scope="col">Receipt Number</th>
+              <th scope="col">Receipt Amount</th>
+              <th scope="col">Receipt Date</th>
+              <th scope="col">Accounting Date</th>
+              <th scope="col">Conversion Date</th>
+              <th scope="col">Currency</th>
+              <th scope="col">Conversion Rate Type</th>
+              <th scope="col">Conversion Rate</th>
+              <th scope="col">Customer Name</th>
+              <th scope="col">Customer Account Number</th>
+              <th scope="col">Customer Site Number</th>
+              <th scope="col">Invoice number reference</th>
+              <th scope="col">Invoice Amount</th>
+              <th scope="col">Comments</th>
+            </tr>
+          </thead>
+          <tbody class="tableBody"></tbody>
+        </table>
+      </section>
+    </main>
+    <script src="./xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
